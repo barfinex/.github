@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="logo.png" alt="Barfinex Logo" width="120"/>
-</p>
-
-# 🌐 Barfinex
-
 **Barfinex** is a modular open trading ecosystem for building financial applications, algorithmic strategies, and analytics.  
 We provide scalable **apps, libraries, and plugins** designed for traders, developers, and researchers.
 
