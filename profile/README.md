@@ -1,17 +1,25 @@
+<p align="center">
+  <img src="profile/logo.png" alt="Barfinex Logo" width="120"/>
+</p>
+
 # 🌐 Barfinex
 
 **Barfinex** is a modular open trading ecosystem for building financial applications, algorithmic strategies, and analytics.  
 We provide scalable **apps, libraries, and plugins** designed for traders, developers, and researchers.
+
+<p align="center">
+  <img src="profile/superhero.png" alt="Barfinex Superhero" width="500"/>
+</p>
 
 ---
 
 ## 🚀 Ecosystem
 
 ### 🧩 Applications
-- **Advisor** – AI-powered trading advice, portfolio optimization, scenario analysis.  
-- **Detector** – Strategy engine for signal detection, backtesting, and alert generation.  
-- **Inspector** – Data inspection and visualization for order flow and strategy debugging.  
-- **Provider** – Unified market data and trading gateway with multi-exchange connectors.  
+- **Advisor** – AI-powered trading advice, portfolio optimization, scenario analysis  
+- **Detector** – Strategy engine for signal detection, backtesting, and alert generation  
+- **Inspector** – Data inspection and visualization for order flow and strategy debugging  
+- **Provider** – Unified market data and trading gateway with multi-exchange connectors  
 
 ### 📚 Libraries
 - **Config** – type-safe configuration management  
@@ -31,6 +39,20 @@ We provide scalable **apps, libraries, and plugins** designed for traders, devel
 - **klinecharts** for trading visualizations  
 - **Redis / MongoDB / Postgres** for storage and caching  
 - **Docker / CI/CD** for deployment and automation  
+
+---
+
+## 🎨 Gallery
+
+<p align="center">
+  <img src="profile/gallery-1.png" width="200"/>
+  <img src="profile/gallery-2.png" width="200"/>
+  <img src="profile/gallery-3.png" width="200"/>
+</p>
+<p align="center">
+  <img src="profile/gallery-4.png" width="200"/>
+  <img src="profile/gallery-5.png" width="200"/>
+</p>
 
 ---
 
