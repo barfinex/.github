@@ -36,23 +36,18 @@ We provide scalable **apps, libraries, and plugins** designed for traders, devel
 
 ---
 
-## 🎨 Gallery
+## License
+This project is licensed under the [Apache License 2.0](LICENSE) with additional restrictions.
 
-<p align="center">
-  <img src="profile/gallery-1.png" width="200"/>
-  <img src="profile/gallery-2.png" width="200"/>
-  <img src="profile/gallery-3.png" width="200"/>
-</p>
-<p align="center">
-  <img src="profile/gallery-4.png" width="200"/>
-  <img src="profile/gallery-5.png" width="200"/>
-</p>
+### Key Terms:
+1. **Attribution**: Proper credit must be given to the original author. This includes mentioning the author's name, "Barfin Network Limited", and linking to the official repository or website.
+2. **Non-Commercial Use**: The use of this codebase for commercial purposes is **prohibited without explicit written permission from Barfin Network Limited**.
+3. **Display Requirements**: When used for non-commercial purposes, the following must be included in any distribution, UI, or documentation:
+   - The name "Barfin Network Limited".
+   - The official logo of Barfin Network Limited.
+   - A working link to the official website: [https://barfin.network/](https://barfin.network/).
 
----
-
-## 📖 License
-Most repositories are licensed under **Apache 2.0 with additional restrictions**.  
-Commercial use requires explicit permission from **Barfin Network Limited**.  
+For further details or to request permission for commercial use, please contact **Barfin Network Limited** through the official channel on our website: [https://barfin.network/](https://barfin.network/).
 
 ---
 
