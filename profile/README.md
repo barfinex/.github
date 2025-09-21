@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="profile/logo.png" alt="Barfinex Logo" width="120"/>
+  <img src="logo.png" alt="Barfinex Logo" width="120"/>
 </p>
 
 # 🌐 Barfinex
@@ -8,7 +8,7 @@
 We provide scalable **apps, libraries, and plugins** designed for traders, developers, and researchers.
 
 <p align="center">
-  <img src="profile/superhero.png" alt="Barfinex Superhero" width="500"/>
+  <img src="superhero.png" alt="Barfinex Superhero" width="500"/>
 </p>
 
 ---
