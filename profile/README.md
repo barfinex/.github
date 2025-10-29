@@ -81,7 +81,10 @@ across applications, analytics modules, and trading services.
 
 ---
 
-### 🔌 Detector Plugins  
+## 🔌 Detector Plugins  
+> **Enterprise-grade extensions for advanced analytics, journaling, and order-flow intelligence.**  
+> Core analytical modules that extend the capabilities of the `Detector` engine with plug-and-play integrations for real-time market interpretation, trade journaling, and liquidity analysis.
+
 
 | npm | Plugin | Description |
 |-----|---------|-------------|
