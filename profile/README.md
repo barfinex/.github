@@ -36,10 +36,11 @@ Through a combination of **scalable microservices, shared libraries, and plug-an
 
 | Application | Description |
 |--------------|-------------|
-| **Advisor** | AI-powered decision engine providing portfolio optimization, market sentiment analysis, and adaptive strategy recommendations. |
-| **Detector** | Core signal engine for real-time strategy execution, backtesting, and event-driven alert generation. |
-| **Inspector** | Interactive analytics and visualization environment for order-flow analysis, performance diagnostics, and strategy validation. |
-| **Provider** | Unified market-data and trading gateway integrating multiple exchanges (spot, futures, and institutional APIs) under a single interface. |
+| [**Provider**](https://github.com/barfinex/app-provider) | Unified market-data and trading gateway integrating multiple exchanges (spot, futures, and institutional APIs) under a single interface. |
+| [**Detector**](https://github.com/barfinex/app-detector) | Core signal engine for real-time strategy execution, backtesting, and event-driven alert generation. |
+| **Advisor** *(Enterprise only)* | AI-powered decision engine providing portfolio optimization, market sentiment analysis, and adaptive strategy recommendations. |
+| **Inspector** *(Enterprise only)* | Interactive analytics and visualization environment for order-flow analysis, performance diagnostics, and strategy validation. |
+
 
 ---
 
