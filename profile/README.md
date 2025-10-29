@@ -5,17 +5,15 @@
 <p align="center">
   <a href="https://barfin.network/">
     <picture>
-      <source srcset="superhero_optimized.webp" type="image/webp" width="400" >
-      <img src="superhero_optimized.png" alt="Barfinex Hero" width="400">
+      <source srcset="superhero_optimized.webp" type="image/webp" width="450" >
+      <img src="superhero_optimized.png" alt="Barfinex Hero" width="450">
     </picture>
   </a>
 </p>
 
 <div align="center">
 
-[![release](https://img.shields.io/github/v/release/barfinex/apps-monorepo?logo=github&color=2ea043)](https://github.com/barfinex/apps-monorepo/releases)
 [![docker](https://img.shields.io/badge/docker-ghcr.io%2Fbarfinex-blue?logo=docker)](https://ghcr.io/barfinex)
-[![build](https://img.shields.io/github/actions/workflow/status/barfinex/apps-monorepo/build.yml?label=build&logo=githubactions)](https://github.com/barfinex/apps-monorepo/actions)
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
 
