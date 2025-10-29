@@ -54,7 +54,7 @@ Through a combination of **scalable microservices, shared libraries, and plug-an
 <div align="center">
 
 [![npm organization](https://img.shields.io/badge/npm-@barfinex-cb3837?logo=npm&logoColor=white)](https://www.npmjs.com/org/barfinex)
-[![packages](https://img.shields.io/badge/packages-16%2B-blue?logo=github&labelColor=gray)](https://www.npmjs.com/org/barfinex)
+[![packages](https://img.shields.io/badge/packages-12%2B-blue?logo=github&labelColor=gray)](https://www.npmjs.com/org/barfinex)
 [![downloads](https://img.shields.io/badge/downloads-growing-success?logo=trendmicro)](https://www.npmjs.com/org/barfinex)
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
 
