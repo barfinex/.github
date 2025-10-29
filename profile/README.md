@@ -1,9 +1,32 @@
+<!-- ========================================================== -->
+<!-- 🦸‍♂️  Barfinex README — Modular Open Trading Ecosystem -->
+<!-- ========================================================== -->
+
+<p align="center">
+  <a href="https://barfin.network/">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/barfinex/.public/main/superhero_optimized.webp" type="image/webp">
+      <img src="https://raw.githubusercontent.com/barfinex/.public/main/superhero_optimized.png" alt="Barfinex Hero" width="800">
+    </picture>
+  </a>
+</p>
+
+<div align="center">
+
+[![release](https://img.shields.io/github/v/release/barfinex/apps-monorepo?logo=github&color=2ea043)](https://github.com/barfinex/apps-monorepo/releases)
+[![docker](https://img.shields.io/badge/docker-ghcr.io%2Fbarfinex-blue?logo=docker)](https://ghcr.io/barfinex)
+[![build](https://img.shields.io/github/actions/workflow/status/barfinex/apps-monorepo/build.yml?label=build&logo=githubactions)](https://github.com/barfinex/apps-monorepo/actions)
+[![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
+[![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
+
+---
+
+# 🦸‍♂️ Barfinex — Modular Open Trading Ecosystem
+
 **Barfinex** is a modular open trading ecosystem for building financial applications, algorithmic strategies, and analytics.  
 We provide scalable **apps, libraries, and plugins** designed for traders, developers, and researchers.
 
-<p align="center">
-  <img src="superhero.png" alt="Barfinex Superhero" width="500"/>
-</p>
+</div>
 
 ---
 
@@ -36,22 +59,32 @@ We provide scalable **apps, libraries, and plugins** designed for traders, devel
 
 ---
 
-## License
+## 📄 License
 This project is licensed under the [Apache License 2.0](LICENSE) with additional restrictions.
 
-### Key Terms:
-1. **Attribution**: Proper credit must be given to the original author. This includes mentioning the author's name, "Barfin Network Limited", and linking to the official repository or website.
-2. **Non-Commercial Use**: The use of this codebase for commercial purposes is **prohibited without explicit written permission from Barfin Network Limited**.
-3. **Display Requirements**: When used for non-commercial purposes, the following must be included in any distribution, UI, or documentation:
-   - The name "Barfin Network Limited".
-   - The official logo of Barfin Network Limited.
-   - A working link to the official website: [https://barfin.network/](https://barfin.network/).
+**Key Terms:**
+1. **Attribution**: Proper credit must be given to the original author. Include  
+   “Barfin Network Limited” and a link to the official repository or website.  
+2. **Non-Commercial Use**: Commercial use is **prohibited** without explicit written permission.  
+3. **Display Requirements**:  
+   - The name “Barfin Network Limited”  
+   - The official logo  
+   - A working link to [https://barfin.network](https://barfin.network)
 
-For further details or to request permission for commercial use, please contact **Barfin Network Limited** through the official channel on our website: [https://barfin.network/](https://barfin.network/).
+For permission requests, contact **Barfin Network Limited** via  
+[https://barfin.network](https://barfin.network)
 
 ---
 
 ## 🌍 Links
-- [Website](https://barfin.network)  
-- [Trading Studio](https://studio.barfinex.com)  
-- [GitHub Organization](https://github.com/barfinex)  
+- 🌐 [Website](https://barfin.network)  
+- 🧭 [Trading Studio](https://studio.barfinex.com)  
+- 💼 [GitHub Organization](https://github.com/barfinex)  
+- 🧱 [Docker Packages](https://ghcr.io/barfinex)
+
+---
+
+<div align="center">
+  <sub>© 2025 Barfin Network Limited — Empowering Financial Intelligence</sub><br/>
+  <sub><em>Data. Strategy. Execution.</em></sub>
+</div>
