@@ -36,10 +36,11 @@ Through a combination of **scalable microservices, shared libraries, and plug-an
 
 | Application | Description |
 |--------------|-------------|
-| [**Provider**](https://github.com/barfinex/app-provider) | Unified market-data and trading gateway integrating multiple exchanges (spot, futures, and institutional APIs) under a single interface. |
-| [**Detector**](https://github.com/barfinex/app-detector) | Core signal engine for real-time strategy execution, backtesting, and event-driven alert generation. |
-| **Advisor** *(Enterprise only)* | AI-powered decision engine providing portfolio optimization, market sentiment analysis, and adaptive strategy recommendations. |
-| **Inspector** *(Enterprise only)* | Interactive analytics and visualization environment for order-flow analysis, performance diagnostics, and strategy validation. |
+| [**Provider**](https://github.com/barfinex/app-provider) | High-performance market data and trading infrastructure providing unified access to multiple exchanges. Acts as the low-latency foundation of the Barfinex ecosystem, aggregating tick-level data, streaming order books, and execution gateways under a consistent API. |
+| [**Detector**](https://github.com/barfinex/app-detector) | Core event-driven strategy engine enabling real-time signal generation, automated rule execution, and historical backtesting. Designed for extensibility through modular plugins and seamless integration with custom analytics pipelines. |
+| **Advisor** *(Enterprise only)* | Intelligent **AI Agent** for portfolio governance and decision support. Combines quantitative analytics, adaptive risk modeling, and reinforcement learning to provide actionable insights, optimize asset allocation, and adjust trading strategies in dynamic market conditions. |
+| **Inspector** *(Enterprise only)* | Comprehensive **risk management and analytics environment** for real-time supervision of portfolio exposure, liquidity stress, and capital efficiency. Enables visualization of order-flow dynamics, performance diagnostics, and automated detection of anomalous trading behavior across multi-asset environments. |
+
 
 
 ---
