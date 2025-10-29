@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://barfin.network/">
     <picture>
-      <source srcset="superhero_small.webp" type="image/webp" width="300" >
-      <img src="superhero_small.png" alt="Barfinex Hero" width="300" >
+      <source srcset="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.webp" type="image/webp">
+      <img src="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.png" alt="Barfinex Hero" width="300">
     </picture>
   </a>
 </p>
