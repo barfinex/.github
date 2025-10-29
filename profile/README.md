@@ -77,20 +77,18 @@ across applications, analytics modules, and trading services.
 | [![npm](https://img.shields.io/npm/v/@barfinex/provider-ws-bridge?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | Real-time WebSocket bridge connecting provider streams to external consumers via Redis-based pub/sub channels. |
 | [![npm](https://img.shields.io/npm/v/@barfinex/detector?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector) | [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) | High-level analytics core for strategy execution, signal evaluation, and plugin orchestration. |
 | [![npm](https://img.shields.io/npm/v/@barfinex/telegram?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/telegram) | [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) | Telegram bot service for alert delivery, control commands, and event-driven interaction. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | Advanced microstructure analytics module analyzing trade deltas, volume distribution, and CVD aggregation. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | Structured journaling module for trade lifecycle tracking, tagging, and performance attribution. |
-
 
 
 ---
 
 ### 🔌 Detector Plugins  
 
-| Plugin | Functionality |
-|---------|----------------|
-| **Orderflow & Trade Analytics** | Advanced microstructure analysis — Delta Ratio, CVD, VWAP, order book imbalance, and liquidity metrics. |
-| **Trade Journal** | Structured trade logging with tagging, performance tracking, and behavioral metrics. |
-| **Indicators** | Comprehensive technical toolkit including VWAP, POI, Candle Volume, and more custom indicators. |
+| npm | Plugin | Description |
+|-----|---------|-------------|
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | **Orderflow & Trade Analytics (Light Edition)** — Provides essential order-flow metrics such as Delta Ratio, CVD, and Volume Distribution. Enables real-time monitoring of market microstructure for retail and institutional strategies. The full Enterprise edition includes extended analytics (VWAP deviations, volume clusters, liquidity pressure, and trade heatmaps). |
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | **Trade Journal (Light Edition)** — Simplified structured journaling module for recording and reviewing executed trades, strategy tags, and performance snapshots. The Enterprise edition extends functionality with advanced behavioral metrics, PnL attribution, and psychological trade scoring models. |
+| 📈 | **@barfinex/detector-plugin-indicators** *(Enterprise only)* | Complete suite of quantitative and volume-based indicators, including enhanced VWAP, POI, Delta, and Candle Volume models with multi-resolution aggregation. Delivered as part of the Enterprise analytics bundle. |
+
 
 ---
 
