@@ -13,7 +13,13 @@
 
 <div>
 
-[![docker](https://img.shields.io/badge/docker-ghcr.io%2Fbarfinex-blue?logo=docker)](https://ghcr.io/barfinex)
+[![docker](https://img.shields.io/badge/docker-ghcr.io%2Fbarfinex-blue?logo=docker)]([https://ghcr.io/barfinex](https://hub.docker.com/r/barfinex))
+
+[![ghcr](https://img.shields.io/badge/GHCR-ghcr.io%2Fbarfinex%2Fprovider-blue?logo=github&logoColor=white)](https://ghcr.io/barfinex/provider)
+[![dockerhub](https://img.shields.io/badge/DockerHub-barfinex%2Fprovider-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/barfinex/provider)
+[![image-size](https://img.shields.io/docker/image-size/barfinex/provider/latest?label=image%20size)](https://ghcr.io/barfinex/provider)
+[![version](https://img.shields.io/badge/version-auto--updated-success)](https://ghcr.io/barfinex/provider)
+
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
 
