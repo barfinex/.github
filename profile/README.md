@@ -72,12 +72,13 @@ across applications, analytics modules, and trading services.
 | [**@barfinex/connectors**](https://www.npmjs.com/package/@barfinex/connectors) ![npm](https://img.shields.io/npm/v/@barfinex/connectors?color=cb3837&logo=npm) | Unified API clients for major exchanges (Binance, Alpaca, Tinkoff, MOEX, etc.) supporting both REST and WebSocket streams. |
 | [**@barfinex/plugin-driver**](https://www.npmjs.com/package/@barfinex/plugin-driver) ![npm](https://img.shields.io/npm/v/@barfinex/plugin-driver?color=cb3837&logo=npm) | Core plugin engine enabling dynamic discovery, loading, and lifecycle management of modular components. |
 | [**@barfinex/orders**](https://www.npmjs.com/package/@barfinex/orders) ![npm](https://img.shields.io/npm/v/@barfinex/orders?color=cb3837&logo=npm) | Order execution and management framework supporting multiple market types and connectors (spot, futures, sandbox). |
-| [**@barfinex/alerts**](https://www.npmjs.com/package/@barfinex/alerts) ![npm](https://img.shields.io/npm/v/@barfinex/alerts?color=cb3837&logo=npm) | Multi-channel alerting framework with Telegram, WebSocket, and custom webhook integrations. |
 | [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) ![npm](https://img.shields.io/npm/v/@barfinex/provider-ws-bridge?color=cb3837&logo=npm) | Real-time WebSocket bridge connecting provider streams to external consumers via Redis-based pub/sub channels. |
 | [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) ![npm](https://img.shields.io/npm/v/@barfinex/detector?color=cb3837&logo=npm) | High-level analytics core for strategy execution, signal evaluation, and plugin orchestration. |
 | [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) ![npm](https://img.shields.io/npm/v/@barfinex/telegram?color=cb3837&logo=npm) | Telegram bot service for alert delivery, control commands, and event-driven interaction. |
-| [**@barfinex/plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/plugin-orderflow-trade-analytics) ![npm](https://img.shields.io/npm/v/@barfinex/plugin-orderflow-trade-analytics?color=cb3837&logo=npm) | Advanced microstructure analytics module analyzing trade deltas, volume distribution, and CVD aggregation. |
-| [**@barfinex/plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/plugin-trade-journal) ![npm](https://img.shields.io/npm/v/@barfinex/plugin-trade-journal?color=cb3837&logo=npm) | Structured journaling module for trade lifecycle tracking, tagging, and performance attribution. |
+| [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) ![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm) | Advanced microstructure analytics module analyzing trade deltas, volume distribution, and CVD aggregation. |
+| [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) ![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm) | Structured journaling module for trade lifecycle tracking, tagging, and performance attribution. |
+
+
 
 
 ---
