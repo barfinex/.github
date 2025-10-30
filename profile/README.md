@@ -2,7 +2,7 @@
 <!-- 🦸‍♂️  Barfinex README — The Open Framework for Algorithmic Trading & Market Intelligence -->
 <!-- ========================================================== -->
 
-<p align="center">
+<p >
   🌐 <b>Languages:</b>  
   <a href="README.md"><code>🇬🇧 English</code></a> ·
   <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
