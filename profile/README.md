@@ -21,6 +21,26 @@
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
 
+
+<!-- 🌍 Language Switcher -->
+<p align="center">
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/🇬🇧%20English-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Read in English" />
+  </a>
+  &nbsp;
+  <a href="README.ru.md">
+    <img src="https://img.shields.io/badge/🇷🇺%20Русский-0078D7?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Читать на русском" />
+  </a>
+  &nbsp;
+  <a href="#">
+    <img src="https://img.shields.io/badge/🇰🇿%20Қазақша-7a7a7a?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Қазақша (скоро)" />
+  </a>
+  &nbsp;
+  <a href="#">
+    <img src="https://img.shields.io/badge/🇨🇳%20中文-7a7a7a?style=for-the-badge&logo=googletranslate&logoColor=white" alt="中文 (скоро)" />
+  </a>
+</p>
+
 ---
 
 # The Open Framework for Algorithmic Trading & Market Intelligence
