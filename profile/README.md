@@ -23,14 +23,11 @@
 
 
 <p align="center">
-  <a href="README.md">
-    <img src="https://img.shields.io/badge/🇬🇧_English-2E86DE?style=flat-square" alt="English" />
-  </a>
-  <a href="README.ru.md">
-    <img src="https://img.shields.io/badge/🇷🇺_Русский-2980B9?style=flat-square" alt="Русский" />
-  </a>
-  <img src="https://img.shields.io/badge/🇰🇿_Қазақша-7F8C8D?style=flat-square" alt="Қазақша (скоро)" />
-  <img src="https://img.shields.io/badge/🇨🇳_中文-7F8C8D?style=flat-square" alt="中文 (скоро)" />
+  🌍 <b>Languages:</b>  
+  [🇬🇧 English](README.md) &nbsp;•&nbsp;
+  [🇷🇺 Русский](README.ru.md) &nbsp;•&nbsp;
+  <span style="color:gray;">🇰🇿 Қазақша</span> &nbsp;•&nbsp;
+  <span style="color:gray;">🇨🇳 中文</span>
 </p>
 
 
