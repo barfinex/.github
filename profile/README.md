@@ -22,13 +22,20 @@
 [![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
 
 
-<p align="center">
-  🌍 <b>Languages:</b>  
-  [🇬🇧 English](README.md) &nbsp;•&nbsp;
-  [🇷🇺 Русский](README.ru.md) &nbsp;•&nbsp;
-  <span style="color:gray;">🇰🇿 Қазақша</span> &nbsp;•&nbsp;
-  <span style="color:gray;">🇨🇳 中文</span>
-</p>
+<div align="center">
+
+🌐 **Select Language**
+
+<a href="README.md" style="text-decoration:none;">
+  <img src="https://img.shields.io/badge/🇬🇧%20English-0A66C2?style=for-the-badge&labelColor=1B1B1B&color=0A66C2" alt="English" />
+</a>
+<a href="README.ru.md" style="text-decoration:none;">
+  <img src="https://img.shields.io/badge/🇷🇺%20Русский-0078D7?style=for-the-badge&labelColor=1B1B1B&color=0078D7" alt="Русский" />
+</a>
+<img src="https://img.shields.io/badge/🇰🇿%20Қазақша-444444?style=for-the-badge&labelColor=1B1B1B&color=666666" alt="Қазақша (скоро)" />
+<img src="https://img.shields.io/badge/🇨🇳%20中文-444444?style=for-the-badge&labelColor=1B1B1B&color=666666" alt="中文 (скоро)" />
+
+</div>
 
 
 ---
