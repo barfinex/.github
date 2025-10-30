@@ -3,6 +3,14 @@
 <!-- ========================================================== -->
 
 <p align="center">
+  🌐 <b>Languages:</b>  
+  <a href="README.md"><code>🇬🇧 English</code></a> ·
+  <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
+  <code style="color:gray;">🇰🇿 Қазақша</code> ·
+  <code style="color:gray;">🇨🇳 中文</code>
+</p>
+
+<p align="center">
   <a href="https://barfin.network/">
     <picture>
       <source srcset="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.webp" type="image/webp">
@@ -20,16 +28,6 @@
 
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
-
-
-<p align="center">
-  🌐 <b>Languages:</b>  
-  <a href="README.md"><code>🇬🇧 English</code></a> ·
-  <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
-  <code style="color:gray;">🇰🇿 Қазақша</code> ·
-  <code style="color:gray;">🇨🇳 中文</code>
-</p>
-
 
 ---
 
