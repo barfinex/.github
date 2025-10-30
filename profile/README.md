@@ -24,16 +24,16 @@
 
 <div align="center">
 
-🌐 **Select Language**
+🌍 **Languages**
 
-<a href="README.md" style="text-decoration:none;">
-  <img src="https://img.shields.io/badge/🇬🇧%20English-0A66C2?style=for-the-badge&labelColor=1B1B1B&color=0A66C2" alt="English" />
+<a href="README.md">
+  <img src="https://img.shields.io/badge/🇬🇧_English-0048BA?style=for-the-badge&logoColor=white" alt="English" />
 </a>
-<a href="README.ru.md" style="text-decoration:none;">
-  <img src="https://img.shields.io/badge/🇷🇺%20Русский-0078D7?style=for-the-badge&labelColor=1B1B1B&color=0078D7" alt="Русский" />
+<a href="README.ru.md">
+  <img src="https://img.shields.io/badge/🇷🇺_Русский-005BBB?style=for-the-badge&logoColor=white" alt="Русский" />
 </a>
-<img src="https://img.shields.io/badge/🇰🇿%20Қазақша-444444?style=for-the-badge&labelColor=1B1B1B&color=666666" alt="Қазақша (скоро)" />
-<img src="https://img.shields.io/badge/🇨🇳%20中文-444444?style=for-the-badge&labelColor=1B1B1B&color=666666" alt="中文 (скоро)" />
+<img src="https://img.shields.io/badge/🇰🇿_Қазақша-9E9E9E?style=for-the-badge" alt="Қазақша (скоро)" />
+<img src="https://img.shields.io/badge/🇨🇳_中文-9E9E9E?style=for-the-badge" alt="中文 (скоро)" />
 
 </div>
 
