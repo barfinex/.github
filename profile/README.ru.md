@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://barfin.network/">
+  <a href="https://barfinex.com">
     <picture>
       <source srcset="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.webp" type="image/webp">
       <img src="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.png" alt="Barfinex Hero" width="300">
@@ -27,7 +27,7 @@
 [![version](https://img.shields.io/badge/version-auto--updated-success)](https://ghcr.io/barfinex/provider)
 
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
-[![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
+[![website](https://img.shields.io/badge/website-barfinex.com-red?logo=firefoxbrowser)](https://barfinex.com)
 
 ---
 
@@ -143,15 +143,15 @@ Barfinex объединяет **данные, аналитику и исполн
 3. **Требования к отображению:**  
    - Название «Barfin Network Limited»  
    - Официальный логотип  
-   - Активная ссылка на [https://barfin.network](https://barfin.network)
+   - Активная ссылка на [https://barfinex.com](https://barfinex.com)
 
 Для получения разрешения обращайтесь через  
-[https://barfin.network](https://barfin.network)
+[https://barfinex.com](https://barfinex.com)
 
 ---
 
 ## 🌍 Ссылки
-- 🌐 [Сайт](https://barfin.network)  
+- 🌐 [Сайт](https://barfinex.com)  
 - 🧭 [Trading Studio](https://studio.barfinex.com)  
 - 💼 [GitHub-организация](https://github.com/barfinex)  
 - 🧱 [Docker-пакеты](https://ghcr.io/barfinex)
