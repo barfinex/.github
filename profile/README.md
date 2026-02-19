@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://barfin.network/">
+  <a href="https://barfinex.com">
     <picture>
       <source srcset="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.webp" type="image/webp">
       <img src="https://raw.githubusercontent.com/barfinex/.github/main/profile/superhero_small.png" alt="Barfinex Hero" width="300">
@@ -27,7 +27,7 @@
 [![version](https://img.shields.io/badge/version-auto--updated-success)](https://ghcr.io/barfinex/provider)
 
 [![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
-[![website](https://img.shields.io/badge/website-barfin.network-red?logo=firefoxbrowser)](https://barfin.network/)
+[![website](https://img.shields.io/badge/website-barfinex.com-red?logo=firefoxbrowser)](https://barfinex.com)
 
 ---
 
@@ -149,15 +149,15 @@ This project is licensed under the [Apache License 2.0](LICENSE) with additional
 3. **Display Requirements**:  
    - The name “Barfin Network Limited”  
    - The official logo  
-   - A working link to [https://barfin.network](https://barfin.network)
+   - A working link to [https://barfinex.com](https://barfinex.com)
 
 For permission requests, contact **Barfin Network Limited** via  
-[https://barfin.network](https://barfin.network)
+[https://barfinex.com](https://barfinex.com)
 
 ---
 
 ## 🌍 Links
-- 🌐 [Website](https://barfin.network)  
+- 🌐 [Website](https://barfinex.com)  
 - 🧭 [Trading Studio](https://studio.barfinex.com)  
 - 💼 [GitHub Organization](https://github.com/barfinex)  
 - 🧱 [Docker Packages](https://ghcr.io/barfinex)
