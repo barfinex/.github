@@ -1,11 +1,11 @@
 <!-- ========================================================== -->
-<!-- 🦸‍♂️  Barfinex README — The Open Framework for Algorithmic Trading & Market Intelligence -->
+<!-- Barfinex README - Open Core + Enterprise Platform -->
 <!-- ========================================================== -->
 
-<p >
-  🌐 <b>Languages:</b>  
+<p>
+  🌐 <b>Languages:</b>
   <a href="README.md"><code>🇬🇧 English</code></a> ·
-  <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
+  <a href="docs/README.rus.md"><code>🇷🇺 Русский</code></a> ·
   <code style="color:gray;">🇰🇿 Қазақша</code> ·
   <code style="color:gray;">🇨🇳 中文</code>
 </p>
@@ -26,145 +26,138 @@
 [![image-size](https://img.shields.io/docker/image-size/barfinex/provider/latest?label=image%20size)](https://ghcr.io/barfinex/provider)
 [![version](https://img.shields.io/badge/version-auto--updated-success)](https://ghcr.io/barfinex/provider)
 
-[![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
+[![license](https://img.shields.io/badge/license-Apache%202.0%20%2B%20Additional%20Terms-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfinex.com-red?logo=firefoxbrowser)](https://barfinex.com)
 
 ---
 
-# The Open Framework for Algorithmic Trading & Market Intelligence
+# Open Core + Enterprise Platform for Algorithmic Trading and Market Intelligence
 
-**Barfinex** is a **modular, enterprise-grade open trading ecosystem** designed to accelerate the development of financial applications, algorithmic trading strategies, and market analytics solutions.  
-Our mission is to empower **traders, developers, and researchers** with a unified, extensible framework that bridges **data, intelligence, and execution** across multiple markets and exchanges.  
+**Barfinex** is a **modular trading platform** that combines an **open-core engineering foundation** with **enterprise analytics and governance layers**.
 
-Through a combination of **scalable microservices, shared libraries, and plug-and-play components**, Barfinex delivers the flexibility and precision required for modern quantitative finance and digital asset markets.  
+It is no longer just a standalone open-source toolkit: the project now evolves as a **production-grade ecosystem** for strategy automation, market intelligence, AI-assisted decisioning, and risk supervision across multiple trading venues.
+
+Built on **TypeScript + NestJS microservices**, Barfinex unifies **market data, signal generation, execution orchestration, telemetry, and operational APIs** in one architecture.
 
 </div>
 
 ---
 
-## 🚀 Ecosystem Overview  
+## Ecosystem Overview
 
-### 🧩 Applications  
+### Applications
 
 | Application | Description |
 |--------------|-------------|
-| [**Provider**](https://github.com/barfinex/app-provider) | High-performance market data and trading infrastructure providing unified access to multiple exchanges. Acts as the low-latency foundation of the Barfinex ecosystem, aggregating tick-level data, streaming order books, and execution gateways under a consistent API. |
-| [**Detector**](https://github.com/barfinex/app-detector) | Core event-driven strategy engine enabling real-time signal generation, automated rule execution, and historical backtesting. Designed for extensibility through modular plugins and seamless integration with custom analytics pipelines. |
-| **Advisor** *(Enterprise only)* | Intelligent **AI Agent** for portfolio governance and decision support. Combines quantitative analytics, adaptive risk modeling, and reinforcement learning to provide actionable insights, optimize asset allocation, and adjust trading strategies in dynamic market conditions. |
-| **Inspector** *(Enterprise only)* | Comprehensive **risk management and analytics environment** for real-time supervision of portfolio exposure, liquidity stress, and capital efficiency. Enables visualization of order-flow dynamics, performance diagnostics, and automated detection of anomalous trading behavior across multi-asset environments. |
-
-
+| [**Provider**](./apps/provider) | High-performance market data and execution gateway. Aggregates connectors, streams candles/orderflow, exposes REST/WebSocket APIs, and acts as the primary integration edge for external clients and internal services. |
+| [**Detector**](./apps/detector) | Core strategy runtime for real-time signal generation, replay/backtest flows, detector lifecycle control, and routing policies for multi-strategy orchestration. |
+| [**Advisor**](./apps/advisor) | AI-assisted decision layer for signal interpretation, policy composition, and adaptive strategy support. Includes hybrid integration with Signal Engine and enterprise ML workflows. |
+| [**Inspector**](./apps/inspector) | Post-trade risk and supervision domain for portfolio diagnostics, operational monitoring, anomaly inspection, and risk-focused analytics. |
 
 ---
 
-## 📦 npm Packages Overview  
+## npm Packages Overview
 
 <div align="center">
 
 [![npm organization](https://img.shields.io/badge/npm-@barfinex-cb3837?logo=npm&logoColor=white)](https://www.npmjs.com/org/barfinex)
-[![packages](https://img.shields.io/badge/packages-12%2B-blue?logo=github&labelColor=gray)](https://www.npmjs.com/org/barfinex)
-[![downloads](https://img.shields.io/badge/downloads-growing-success?logo=trendmicro)](https://www.npmjs.com/org/barfinex)
-[![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
+[![stack](https://img.shields.io/badge/stack-open--core%20%2B%20enterprise-blue)](https://github.com/barfinex)
+[![license](https://img.shields.io/badge/license-Apache%202.0%20%2B%20Additional%20Terms-lightgrey)](LICENSE)
 
 </div>
 
-Barfinex maintains a collection of **TypeScript-first, enterprise-grade libraries and plugins** published under the  
-[`@barfinex`](https://www.npmjs.com/org/barfinex) organization on npm.  
-Each package follows strict semantic versioning, full type safety, and unified API design principles to ensure consistency  
-across applications, analytics modules, and trading services.
+Barfinex maintains a TypeScript-first package ecosystem under [`@barfinex`](https://www.npmjs.com/org/barfinex), including open-core infrastructure libraries and advanced domain engines used by enterprise applications.
 
 ---
 
-### 📚 Core Libraries  
+### Core Libraries
 
 | npm | Library | Description |
 |-----|----------|-------------|
-| [![npm](https://img.shields.io/npm/v/@barfinex/types?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/types) | [**@barfinex/types**](https://www.npmjs.com/package/@barfinex/types) | Shared type definitions ensuring strong compile-time safety across all Barfinex services and plugins. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/utils?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/utils) | [**@barfinex/utils**](https://www.npmjs.com/package/@barfinex/utils) | Foundational utility toolkit including math, time, formatting, and trading data helpers optimized for performance. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/config?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/config) | [**@barfinex/config**](https://www.npmjs.com/package/@barfinex/config) | Centralized configuration system providing type-safe schema validation and environment management. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/key?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/key) | [**@barfinex/key**](https://www.npmjs.com/package/@barfinex/key) | Secure key and credential management with encryption, scoped secrets, and runtime validation. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/connectors?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/connectors) | [**@barfinex/connectors**](https://www.npmjs.com/package/@barfinex/connectors) | Unified API clients for major exchanges (Binance, Alpaca, Tinkoff, MOEX, etc.) supporting both REST and WebSocket streams. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/plugin-driver?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/plugin-driver) | [**@barfinex/plugin-driver**](https://www.npmjs.com/package/@barfinex/plugin-driver) | Core plugin engine enabling dynamic discovery, loading, and lifecycle management of modular components. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/orders?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/orders) | [**@barfinex/orders**](https://www.npmjs.com/package/@barfinex/orders) | Order execution and management framework supporting multiple market types and connectors (spot, futures, sandbox). |
-| [![npm](https://img.shields.io/npm/v/@barfinex/provider-ws-bridge?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | Real-time WebSocket bridge connecting provider streams to external consumers via Redis-based pub/sub channels. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/detector?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector) | [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) | High-level analytics core for strategy execution, signal evaluation, and plugin orchestration. |
-| [![npm](https://img.shields.io/npm/v/@barfinex/telegram?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/telegram) | [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) | Telegram bot service for alert delivery, control commands, and event-driven interaction. |
-
+| [![npm](https://img.shields.io/npm/v/@barfinex/types?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/types) | [**@barfinex/types**](https://www.npmjs.com/package/@barfinex/types) | Shared domain contracts and strongly typed interfaces across all Barfinex services. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/utils?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/utils) | [**@barfinex/utils**](https://www.npmjs.com/package/@barfinex/utils) | Utility layer with reusable helpers for math, time, formatting, and common runtime workflows. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/config?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/config) | [**@barfinex/config**](https://www.npmjs.com/package/@barfinex/config) | Centralized configuration and schema-driven environment management. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/key?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/key) | [**@barfinex/key**](https://www.npmjs.com/package/@barfinex/key) | Key and credential handling library with security-oriented helpers. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/connectors?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/connectors) | [**@barfinex/connectors**](https://www.npmjs.com/package/@barfinex/connectors) | Unified adapters for exchange and broker connectivity via REST and WebSocket channels. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/plugin-driver?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/plugin-driver) | [**@barfinex/plugin-driver**](https://www.npmjs.com/package/@barfinex/plugin-driver) | Plugin runtime for dynamic module discovery and lifecycle orchestration. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/orders?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/orders) | [**@barfinex/orders**](https://www.npmjs.com/package/@barfinex/orders) | Order lifecycle and execution abstractions for multi-market integrations. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/provider-ws-bridge?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | WebSocket bridge and stream fan-out layer for real-time consumers. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/provider-mcp?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/provider-mcp) | [**@barfinex/provider-mcp**](https://www.npmjs.com/package/@barfinex/provider-mcp) | Model Context Protocol integration layer for Provider API tooling and automation flows. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector) | [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) | Detector runtime core for strategy management, routing, and event-driven execution. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/signal-engine?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/signal-engine) | [**@barfinex/signal-engine**](https://www.npmjs.com/package/@barfinex/signal-engine) | Signal classification and trend/regime decision layer for higher-level strategy logic. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/risk-engine?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/risk-engine) | [**@barfinex/risk-engine**](https://www.npmjs.com/package/@barfinex/risk-engine) | Pre-trade risk controls and policy primitives for safe execution gating. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/portfolio-engine?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/portfolio-engine) | [**@barfinex/portfolio-engine**](https://www.npmjs.com/package/@barfinex/portfolio-engine) | Portfolio-level allocation and orchestration helpers for multi-strategy environments. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/backtest-engine?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/backtest-engine) | [**@barfinex/backtest-engine**](https://www.npmjs.com/package/@barfinex/backtest-engine) | Historical simulation engine for strategy validation and performance comparison. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/capital-engine?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/capital-engine) | [**@barfinex/capital-engine**](https://www.npmjs.com/package/@barfinex/capital-engine) | Capital allocation logic for efficiency-aware and risk-aware deployment scenarios. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/telegram?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/telegram) | [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) | Telegram integration for notifications, commands, and operational workflows. |
 
 ---
 
-## 🔌 Detector Plugins  
-> **Enterprise-grade extensions for advanced analytics, journaling, and order-flow intelligence.**  
-> Core analytical modules that extend the capabilities of the `Detector` engine with plug-and-play integrations for real-time market interpretation, trade journaling, and liquidity analysis.
-
+## Detector Plugins
+> Modular analytics extensions for the Detector runtime.
 
 | npm | Plugin | Description |
 |-----|---------|-------------|
-| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | **Orderflow & Trade Analytics (Light Edition)** — Provides essential order-flow metrics such as Delta Ratio, CVD, and Volume Distribution. Enables real-time monitoring of market microstructure for retail and institutional strategies. The full Enterprise edition includes extended analytics (VWAP deviations, volume clusters, liquidity pressure, and trade heatmaps). |
-| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | **Trade Journal (Light Edition)** — Simplified structured journaling module for recording and reviewing executed trades, strategy tags, and performance snapshots. The Enterprise edition extends functionality with advanced behavioral metrics, PnL attribution, and psychological trade scoring models. |
-| 📈 | **@barfinex/indicators** *(Enterprise only)* | Complete suite of quantitative and volume-based indicators, including enhanced VWAP, POI, Delta, and Candle Volume models with multi-resolution aggregation. Delivered as part of the Enterprise analytics bundle. |
-
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | Orderflow analytics plugin with delta/CVD-focused metrics for market microstructure interpretation. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | Trade journaling plugin for structured strategy events, execution traces, and post-analysis workflows. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/indicators?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/indicators) | [**@barfinex/indicators**](https://www.npmjs.com/package/@barfinex/indicators) | Indicator toolkit used by signal pipelines and strategy modules (trend, momentum, volatility, and derived transforms). |
 
 ---
 
-## 🛠️ Technology Stack  
+## Technology Stack
 
 | Layer | Technologies |
 |-------|---------------|
 | **Core Platform** | **TypeScript**, **NestJS**, **Node.js** |
-| **Data Visualization** | **klinecharts** with custom indicators and overlays |
-| **Data Infrastructure** | **Redis**, **MongoDB**, **PostgreSQL** for storage, caching, and streaming |
-| **Deployment & DevOps** | **Docker**, **GitHub Actions**, **Semantic Release**, and full CI/CD automation |
+| **Integration** | **REST**, **WebSocket**, **MCP (Model Context Protocol)** |
+| **Data Infrastructure** | **Redis**, **MongoDB**, **PostgreSQL**, **QuestDB** |
+| **Deployment & DevOps** | **Docker**, **GitHub Actions**, **Semantic Release**, **CI/CD pipelines** |
 
 ---
 
-## 💡 Architecture Principles  
+## Architecture Principles
 
-- **Modularity:** Every component is isolated, reusable, and composable.  
-- **Observability:** Unified logging, tracing, and monitoring across all services.  
-- **Scalability:** Horizontally scalable architecture optimized for low latency and high throughput.  
-- **Extensibility:** Plug-and-play interface for third-party plugins, indicators, and AI models.  
-- **Transparency:** Open ecosystem governed by clear API contracts and semantic versioning.  
-
----
-
-## 🧭 Why Barfinex  
-
-Barfinex unifies **market data, analytics, and execution pipelines** within a single ecosystem, enabling teams to:  
-
-- Develop and deploy trading algorithms faster with minimal boilerplate.  
-- Access standardized APIs for data ingestion, simulation, and execution.  
-- Integrate AI-driven decision modules and research pipelines seamlessly.  
-- Collaborate within a shared open-source architecture built for growth.  
+- **Open Core, Enterprise Ready:** Open engineering foundation with enterprise modules for advanced operations.
+- **Modularity:** Service and package boundaries enable composable architecture and independent delivery.
+- **Scalability:** Event-driven workflows optimized for low-latency, high-throughput market processing.
+- **Risk Separation:** Explicit split between pre-trade (`risk-engine`) and post-trade (`inspector`) controls.
+- **AI-Native Evolution:** Advisor and signal domains support hybrid ML/rule-based decision strategies.
 
 ---
 
-## 📄 License
-This project is licensed under the [Apache License 2.0](LICENSE) with additional restrictions.
+## Why Barfinex
 
-**Key Terms:**
-1. **Attribution**: Proper credit must be given to the original author. Include  
-   “Barfin Network Limited” and a link to the official repository or website.  
-2. **Non-Commercial Use**: Commercial use is **prohibited** without explicit written permission.  
-3. **Display Requirements**:  
-   - The name “Barfin Network Limited”  
-   - The official logo  
-   - A working link to [https://barfinex.com](https://barfinex.com)
+Barfinex unifies **market data, strategy logic, execution control, and supervisory analytics** into one ecosystem so teams can:
 
-For permission requests, contact **Barfin Network Limited** via  
-[https://barfinex.com](https://barfinex.com)
+- Build and iterate on algorithmic strategies faster.
+- Reuse shared engines for backtesting, capital allocation, and risk control.
+- Integrate AI-assisted decision workflows without breaking deterministic safety boundaries.
+- Operate both open-core and enterprise deployments on a common architecture.
 
 ---
 
-## 🌍 Links
-- 🌐 [Website](https://barfinex.com)  
-- 🧭 [Trading Studio](https://studio.barfinex.com)  
-- 💼 [GitHub Organization](https://github.com/barfinex)  
-- 🧱 [Docker Packages](https://ghcr.io/barfinex)
+## License
+This project uses **Apache License 2.0** with **additional terms and restrictions** defined in [`LICENSE`](./LICENSE).
+
+**Key terms include:**
+1. **Attribution required** to Barfin Network Limited.
+2. **Commercial use restriction** without prior written consent.
+3. **Display requirements** for name/logo/link in derivative distributions and public-facing usage.
+
+For commercial permissions and legal requests, contact via [https://barfinex.com](https://barfinex.com).
+
+---
+
+## Links
+- [Website](https://barfinex.com)
+- [Trading Studio](https://studio.barfinex.com)
+- [GitHub Organization](https://github.com/barfinex)
+- [Container Registry](https://ghcr.io/barfinex)
+- [Documentation Index](./docs/README.md)
 
 ---
 
 <div align="center">
-  <sub>© 2025 Barfin Network Limited — Empowering Financial Intelligence</sub><br/>
-  <sub><em>Data. Strategy. Execution.</em></sub>
+  <sub>© 2026 Barfin Network Limited</sub><br/>
+  <sub><em>Data. Strategy. Execution. Governance.</em></sub>
 </div>
