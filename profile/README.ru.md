@@ -1,11 +1,11 @@
 <!-- ========================================================== -->
-<!-- 🦸‍♂️  Barfinex README — Открытая Платформа для Алгоритмической Торговли и Рыночной Аналитики -->
+<!-- Barfinex README - Open Core + Enterprise Platform (RU) -->
 <!-- ========================================================== -->
 
-<p >
-  🌐 <b>Языки:</b>  
+<p>
+  🌐 <b>Языки:</b>
   <a href="README.md"><code>🇬🇧 English</code></a> ·
-  <a href="README.ru.md?cache=20251030092013"><code>🇷🇺 Русский</code></a> ·
+  <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
   <code style="color:gray;">🇰🇿 Қазақша</code> ·
   <code style="color:gray;">🇨🇳 中文</code>
 </p>
@@ -26,139 +26,151 @@
 [![image-size](https://img.shields.io/docker/image-size/barfinex/provider/latest?label=image%20size)](https://ghcr.io/barfinex/provider)
 [![version](https://img.shields.io/badge/version-auto--updated-success)](https://ghcr.io/barfinex/provider)
 
-[![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
+[![license](https://img.shields.io/badge/license-Apache%202.0%20%2B%20Additional%20Terms-lightgrey)](LICENSE)
 [![website](https://img.shields.io/badge/website-barfinex.com-red?logo=firefoxbrowser)](https://barfinex.com)
 
 ---
 
-# Открытая Платформа для Алгоритмической Торговли и Рыночного Интеллекта
+# Open Core + Enterprise: платформа алгоритмической торговли и рыночной аналитики
 
-**Barfinex** — это **модульная, корпоративного уровня открытая торговая экосистема**, созданная для ускорения разработки финансовых приложений, алгоритмических стратегий и аналитических решений.  
-Наша миссия — предоставить **трейдерам, разработчикам и исследователям** единую платформу, объединяющую **данные, интеллект и исполнение** в разных рынках и на различных биржах.  
+**Barfinex** — **модульная торговая платформа**, объединяющая **открытое ядро** с **корпоративными аналитикой и управлением**.
 
-Благодаря комбинации **масштабируемых микросервисов, общих библиотек и подключаемых компонентов**, Barfinex обеспечивает гибкость и точность, необходимые для современной количественной аналитики и цифровых активов.  
+Это не просто набор открытых инструментов: проект развивается как **production-ready экосистема** для автоматизации стратегий, рыночной аналитики, решений с поддержкой ИИ и контроля рисков на разных торговых площадках.
+
+На базе **TypeScript + NestJS микросервисов** Barfinex объединяет **рыночные данные, генерацию сигналов, оркестрацию исполнения, телеметрию и операционные API** в единой архитектуре.
 
 </div>
 
 ---
 
-## 🚀 Обзор Экосистемы  
+## Обзор экосистемы
 
-### 🧩 Приложения  
+### Приложения
 
 | Приложение | Описание |
-|-------------|-----------|
-| [**Provider**](https://github.com/barfinex/app-provider) | Высокопроизводительная инфраструктура рыночных данных и торговых операций, обеспечивающая единый доступ к множеству бирж. Является низколатентным фундаментом экосистемы Barfinex, агрегируя потоковые данные, стаканы и шлюзы исполнения под единым API. |
-| [**Detector**](https://github.com/barfinex/app-detector) | Основной событийно-ориентированный движок стратегий, обеспечивающий генерацию торговых сигналов в реальном времени, автоматическое выполнение правил и историческое тестирование. Поддерживает расширения через модульные плагины и интеграцию с аналитическими пайплайнами. |
-| **Advisor** *(только Enterprise)* | Интеллектуальный **AI-агент** для управления портфелем и поддержки решений. Объединяет количественную аналитику, адаптивное моделирование рисков и методы обучения с подкреплением, предлагая оптимизацию активов и динамическую настройку стратегий под рыночные условия. |
-| **Inspector** *(только Enterprise)* | Комплексная среда **риск-менеджмента и аналитики** для мониторинга экспозиции, ликвидности и эффективности капитала в реальном времени. Позволяет визуализировать потоки ордеров, диагностировать производительность и выявлять аномалии торгового поведения на мульти-активных рынках. |
+|--------------|-------------|
+| [**Provider**](./apps/provider) | Высокопроизводительный шлюз рыночных данных и исполнения. Агрегирует коннекторы, стримит свечи/orderflow, предоставляет REST/WebSocket API и выступает основным интеграционным краем для внешних клиентов и внутренних сервисов. |
+| [**Detector**](./apps/detector) | Ядро рантайма стратегий: генерация сигналов в реальном времени, реплей/бэктест, управление жизненным циклом детекторов и политики маршрутизации для оркестрации нескольких стратегий. |
+| [**Advisor**](./apps/advisor) | Слой решений с поддержкой ИИ: интерпретация сигналов, составление политик и адаптивная поддержка стратегий. Включает гибридную интеграцию с Signal Engine и корпоративные ML-процессы. |
+| [**Inspector**](./apps/inspector) | Пост-трейд риски и надзор: диагностика портфеля, операционный мониторинг, проверка аномалий и аналитика, ориентированная на риски. |
 
 ---
 
-## 📦 Обзор npm-пакетов  
+## Обзор npm-пакетов
 
 <div align="center">
 
 [![npm organization](https://img.shields.io/badge/npm-@barfinex-cb3837?logo=npm&logoColor=white)](https://www.npmjs.com/org/barfinex)
-[![packages](https://img.shields.io/badge/packages-12%2B-blue?logo=github&labelColor=gray)](https://www.npmjs.com/org/barfinex)
-[![downloads](https://img.shields.io/badge/downloads-growing-success?logo=trendmicro)](https://www.npmjs.com/org/barfinex)
-[![license](https://img.shields.io/badge/license-Apache%202.0-lightgrey)](LICENSE)
+[![stack](https://img.shields.io/badge/stack-open--core%20%2B%20enterprise-blue)](https://github.com/barfinex)
+[![license](https://img.shields.io/badge/license-Apache%202.0%20%2B%20Additional%20Terms-lightgrey)](LICENSE)
 
 </div>
 
-Barfinex поддерживает набор **TypeScript-библиотек и плагинов корпоративного уровня**, опубликованных под  
-организацией [`@barfinex`](https://www.npmjs.com/org/barfinex) в npm.  
-Каждый пакет следует строгому семантическому версионированию, обладает полной типизацией и едиными принципами API-дизайна, обеспечивая согласованность  
-между приложениями, аналитическими модулями и торговыми сервисами.
+Barfinex поддерживает экосистему пакетов на TypeScript под [`@barfinex`](https://www.npmjs.com/org/barfinex): библиотеки открытого ядра и продвинутые доменные движки для корпоративных приложений.
 
 ---
 
-### 📚 Основные библиотеки  
+### Основные библиотеки
 
 | npm | Библиотека | Описание |
-|-----|-------------|-----------|
-| [**@barfinex/types**](https://www.npmjs.com/package/@barfinex/types) | Общие типы, обеспечивающие строгую типизацию на уровне компиляции для всех сервисов и плагинов Barfinex. |
-| [**@barfinex/utils**](https://www.npmjs.com/package/@barfinex/utils) | Набор утилит: математика, время, форматирование и торговые помощники, оптимизированные по производительности. |
-| [**@barfinex/config**](https://www.npmjs.com/package/@barfinex/config) | Централизованная система конфигурации с безопасной типизацией и валидацией окружения. |
-| [**@barfinex/key**](https://www.npmjs.com/package/@barfinex/key) | Безопасное управление ключами и учетными данными с шифрованием и проверкой в рантайме. |
-| [**@barfinex/connectors**](https://www.npmjs.com/package/@barfinex/connectors) | Унифицированные клиенты API для основных бирж (Binance, Alpaca, Tinkoff, MOEX и др.) с поддержкой REST и WebSocket. |
-| [**@barfinex/plugin-driver**](https://www.npmjs.com/package/@barfinex/plugin-driver) | Основной движок плагинов для динамического поиска, загрузки и управления жизненным циклом модулей. |
-| [**@barfinex/orders**](https://www.npmjs.com/package/@barfinex/orders) | Фреймворк управления ордерами с поддержкой спота, фьючерсов и песочницы. |
-| [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | Мост WebSocket для ретрансляции потоков данных провайдера через Redis Pub/Sub-каналы. |
-| [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) | Высокоуровневый аналитический модуль для исполнения стратегий, оценки сигналов и оркестрации плагинов. |
-| [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) | Telegram-сервис для уведомлений, управления и интерактивных команд. |
+|-----|----------|-------------|
+| [![npm](https://img.shields.io/npm/v/@barfinex/types?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/types) | [**@barfinex/types**](https://www.npmjs.com/package/@barfinex/types) | Общие доменные контракты и строго типизированные интерфейсы для всех сервисов Barfinex. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/utils?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/utils) | [**@barfinex/utils**](https://www.npmjs.com/package/@barfinex/utils) | Утилиты: математика, время, форматирование и общие рантайм-сценарии. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/config?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/config) | [**@barfinex/config**](https://www.npmjs.com/package/@barfinex/config) | Централизованная конфигурация и управление окружением на основе схем. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/key?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/key) | [**@barfinex/key**](https://www.npmjs.com/package/@barfinex/key) | Работа с ключами и учётными данными, безопасность. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/connectors?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/connectors) | [**@barfinex/connectors**](https://www.npmjs.com/package/@barfinex/connectors) | Единые адаптеры для подключения к биржам и брокерам через REST и WebSocket. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/plugin-driver?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/plugin-driver) | [**@barfinex/plugin-driver**](https://www.npmjs.com/package/@barfinex/plugin-driver) | Рантайм плагинов: обнаружение модулей и оркестрация жизненного цикла. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/orders?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/orders) | [**@barfinex/orders**](https://www.npmjs.com/package/@barfinex/orders) | Жизненный цикл ордеров и абстракции исполнения для мульти-рынков. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/provider-ws-bridge?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | [**@barfinex/provider-ws-bridge**](https://www.npmjs.com/package/@barfinex/provider-ws-bridge) | WebSocket-мост и раздача стримов для потребителей в реальном времени. |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/provider-mcp** *(Подписка)* | Интеграция Model Context Protocol для инструментов Provider API и автоматизации. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector) | [**@barfinex/detector**](https://www.npmjs.com/package/@barfinex/detector) | Ядро рантайма детекторов: управление стратегиями, маршрутизация и событийное исполнение. |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/signal-engine** *(Подписка)* | Классификация сигналов и слой решений по тренду/режиму для стратегической логики. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/risk-engine** *(Подписка)* | Pre-trade контроль рисков и политики для безопасного исполнения. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/portfolio-engine** *(Подписка)* | Аллокация и оркестрация на уровне портфеля для мульти-стратегий. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/backtest-engine** *(Подписка)* | Движок исторической симуляции для валидации стратегий и сравнения результатов. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/capital-engine** *(Подписка)* | Логика аллокации капитала с учётом эффективности и рисков. Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
+| [![npm](https://img.shields.io/npm/v/@barfinex/telegram?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/telegram) | [**@barfinex/telegram**](https://www.npmjs.com/package/@barfinex/telegram) | Интеграция с Telegram: уведомления, команды и операционные сценарии. |
 
 ---
 
-## 🔌 Плагины Detector  
-> **Расширения корпоративного уровня для продвинутой аналитики, журналирования и анализа ордер-флоу.**  
-> Ядро аналитических модулей, расширяющих возможности движка `Detector` через подключаемые интеграции для анализа ликвидности, потоков и поведения рынка.
+## Плагины Detector
+> Модульные аналитические расширения для рантайма Detector.
 
 | npm | Плагин | Описание |
-|-----|---------|-----------|
-| [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | **Orderflow & Trade Analytics (Лайт-версия)** — ключевые метрики потока ордеров: Delta Ratio, CVD, распределение объема. Позволяет в реальном времени отслеживать микроструктуру рынка для розничных и институциональных стратегий. Полная Enterprise-версия включает расширенные метрики (отклонения VWAP, кластеры объема, давление ликвидности и тепловые карты сделок). |
-| [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | **Trade Journal (Лайт-версия)** — модуль журналирования сделок: запись, классификация и анализ эффективности стратегий. Enterprise-версия добавляет поведенческую аналитику, атрибуцию PnL и психологическую оценку трейдов. |
-| 📈 | **@barfinex/indicators** *(только Enterprise)* | Полный набор количественных и объемных индикаторов (VWAP, POI, Delta, Candle Volume и др.) с мульти-таймфреймной агрегацией. |
+|-----|---------|-------------|
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-orderflow-trade-analytics?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | [**@barfinex/detector-plugin-orderflow-trade-analytics**](https://www.npmjs.com/package/@barfinex/detector-plugin-orderflow-trade-analytics) | Аналитика ордерфлоу: метрики delta/CVD для интерпретации микроструктуры рынка. |
+| [![npm](https://img.shields.io/npm/v/@barfinex/detector-plugin-trade-journal?color=cb3837&logo=npm)](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | [**@barfinex/detector-plugin-trade-journal**](https://www.npmjs.com/package/@barfinex/detector-plugin-trade-journal) | Журнал сделок: структурированные события стратегий, трассы исполнения и пост-анализ. |
+| ![subscription](https://img.shields.io/badge/access-paid%20subscription-orange) | **@barfinex/indicators** *(Подписка)* | Набор индикаторов для сигнальных пайплайнов и модулей стратегий (тренд, импульс, волатильность и производные). Доступно по платной подписке; контакт: [barfinex.com](https://barfinex.com). |
 
 ---
 
-## 🛠️ Технологический стек  
+## Технологический стек
 
-| Уровень | Технологии |
-|----------|-------------|
-| **Основная платформа** | **TypeScript**, **NestJS**, **Node.js** |
-| **Визуализация данных** | **klinecharts** с кастомными индикаторами и оверлеями |
-| **Инфраструктура данных** | **Redis**, **MongoDB**, **PostgreSQL** — для хранения, кэширования и потоковой обработки |
-| **Развертывание и DevOps** | **Docker**, **GitHub Actions**, **Semantic Release**, полная CI/CD-автоматизация |
-
----
-
-## 💡 Архитектурные принципы  
-
-- **Модульность:** каждый компонент изолирован и переиспользуем.  
-- **Наблюдаемость:** единая система логирования, трейсинга и метрик.  
-- **Масштабируемость:** горизонтально масштабируемая архитектура с низкой задержкой.  
-- **Расширяемость:** открытый интерфейс для сторонних плагинов, индикаторов и AI-моделей.  
-- **Прозрачность:** открытая экосистема с четкими API-контрактами и версионированием.  
+| Слой | Технологии |
+|-------|---------------|
+| **Ядро платформы** | **TypeScript**, **NestJS**, **Node.js** |
+| **Интеграция** | **REST**, **WebSocket**, **MCP (Model Context Protocol)** |
+| **Данные** | **Redis**, **MongoDB**, **PostgreSQL**, **QuestDB** |
+| **Развёртывание и DevOps** | **Docker**, **GitHub Actions**, **Semantic Release**, **CI/CD** |
 
 ---
 
-## 🧭 Почему Barfinex  
+## Принципы архитектуры
 
-Barfinex объединяет **данные, аналитику и исполнение** в единой экосистеме, позволяя командам:
-
-- Разрабатывать и внедрять торговые алгоритмы быстрее и безопаснее.  
-- Использовать стандартизированные API для получения, моделирования и исполнения данных.  
-- Интегрировать AI-модули принятия решений и исследовательские пайплайны.  
-- Работать совместно в открытой архитектуре, готовой к росту и масштабированию.  
-
----
-
-## 📄 Лицензия
-Проект распространяется под [лицензией Apache 2.0](LICENSE) с дополнительными ограничениями.
-
-**Основные условия:**
-1. **Атрибуция:** необходимо указывать авторство «Barfin Network Limited» и ссылку на официальный репозиторий или сайт.  
-2. **Некомерческое использование:** коммерческое использование **запрещено** без письменного разрешения.  
-3. **Требования к отображению:**  
-   - Название «Barfin Network Limited»  
-   - Официальный логотип  
-   - Активная ссылка на [https://barfinex.com](https://barfinex.com)
-
-Для получения разрешения обращайтесь через  
-[https://barfinex.com](https://barfinex.com)
+- **Open Core, готовность к enterprise:** открытое ядро с корпоративными модулями для продвинутых операций.
+- **Модульность:** чёткие границы сервисов и пакетов для композируемой архитектуры и независимой поставки.
+- **Масштабируемость:** событийные потоки, оптимизированные под низкую задержку и высокую пропускную способность.
+- **Разделение рисков:** явное разделение pre-trade (`risk-engine`) и пост-трейд (`inspector`) контроля.
+- **Эволюция с учётом ИИ:** Advisor и сигнальный домен поддерживают гибридные ML/правила для решений.
 
 ---
 
-## 🌍 Ссылки
-- 🌐 [Сайт](https://barfinex.com)  
-- 🧭 [Trading Studio](https://studio.barfinex.com)  
-- 💼 [GitHub-организация](https://github.com/barfinex)  
-- 🧱 [Docker-пакеты](https://ghcr.io/barfinex)
+## Зачем Barfinex
+
+Barfinex объединяет **рыночные данные, логику стратегий, управление исполнением и надзорную аналитику** в одной экосистеме, чтобы команды могли:
+
+- Быстрее разрабатывать и итерировать алгоритмические стратегии.
+- Переиспользовать общие движки для бэктеста, аллокации капитала и контроля рисков.
+- Встраивать сценарии решений с поддержкой ИИ без нарушения детерминированных границ безопасности.
+- Эксплуатировать как открытое ядро, так и корпоративные развёртывания на общей архитектуре.
+
+---
+
+## Включение/отключение модулей по подписке
+
+Корпоративные библиотеки можно включать и отключать без поломки старта открытого ядра:
+
+- Установите `BARFINEX_DISABLE_SUBSCRIPTION_LIBS=true` для принудительного использования адаптеров открытого ядра.
+- Точки входа для разработки в режиме open-core:
+  - `npm run start:detector:open:dev`
+  - `npm run start:advisor:open:dev`
+  - `npm run start:mcp:provider:open:dev`
+- При отключении корпоративные модули переходят в безопасный fallback и пишут соответствующие сообщения в логах.
+
+---
+
+## Лицензия
+Проект распространяется по **Apache License 2.0** с **дополнительными условиями и ограничениями** в [`LICENSE`](./LICENSE).
+
+**Основные пункты:**
+1. **Обязательная атрибуция** Barfin Network Limited.
+2. **Ограничение коммерческого использования** без предварительного письменного согласия.
+3. **Требования к отображению** названия/логотипа/ссылки в производных дистрибутивах и публичном использовании.
+
+По вопросам коммерческого использования и юридическим запросам: [https://barfinex.com](https://barfinex.com).
+
+---
+
+## Ссылки
+- [Сайт](https://barfinex.com)
+- [Trading Studio](https://studio.barfinex.com)
+- [Организация на GitHub](https://github.com/barfinex)
+- [Container Registry](https://ghcr.io/barfinex)
+- [Индекс документации](./docs/README.md)
 
 ---
 
 <div align="center">
-  <sub>© 2025 Barfin Network Limited — Разум Финансовых Рынков</sub><br/>
-  <sub><em>Данные. Стратегия. Исполнение.</em></sub>
+  <sub>© 2026 Barfin Network Limited</sub><br/>
+  <sub><em>Данные. Стратегия. Исполнение. Управление.</em></sub>
 </div>
