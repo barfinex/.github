@@ -165,8 +165,7 @@ Barfinex объединяет **рыночные данные, логику ст
 - [Сайт](https://barfinex.com)
 - [Trading Studio](https://studio.barfinex.com)
 - [Организация на GitHub](https://github.com/barfinex)
-- [Container Registry](https://ghcr.io/barfinex)
-- [Индекс документации](./docs/README.md)
+- [Container Registry](https://hub.docker.com/u/barfinex)
 
 ---
 
