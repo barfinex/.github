@@ -152,7 +152,7 @@ For commercial permissions and legal requests, contact via [https://barfinex.com
 - [Website](https://barfinex.com)
 - [Trading Studio](https://studio.barfinex.com)
 - [GitHub Organization](https://github.com/barfinex)
-- [Container Registry](https://ghcr.io/barfinex)
+- [Container Registry](https://hub.docker.com/u/barfinex)
 
 ---
 
