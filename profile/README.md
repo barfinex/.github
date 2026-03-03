@@ -5,7 +5,7 @@
 <p>
   🌐 <b>Languages:</b>
   <a href="README.md"><code>🇬🇧 English</code></a> ·
-  <a href="README.rus.md"><code>🇷🇺 Русский</code></a> ·
+  <a href="README.ru.md"><code>🇷🇺 Русский</code></a> ·
   <code style="color:gray;">🇰🇿 Қазақша</code> ·
   <code style="color:gray;">🇨🇳 中文</code>
 </p>
